@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>陳宣羽｜Frontend Engineer Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="hero">
+      <h1>
+        陳宣羽 <span>｜ 前端工程師&ensp;Portfolio</span>
+      </h1>
+
+      <p class="summary">
+        4+ 年 Vue 前端開發經驗，專注於 AI 互動系統與平台型 Web 應用
+      </p>
+
+      <a class="email-link" href="mailto:syuanyuri@gmail.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6H20V18H4V6Z" stroke="currentColor" stroke-width="2" />
+          <path d="M4 6L12 13L20 6" stroke="currentColor" stroke-width="2" />
+        </svg>
+        syuanyuri@gmail.com
+      </a>
+
+      <div class="tags">
+        <span class="tag">Vue 3</span>
+        <span class="tag">Pinia</span>
+        <span class="tag">Vue Router</span>
+        <span class="tag">RWD</span>
+        <span class="tag">RESTful API</span>
+        <span class="tag">Axios</span>
+        <span class="tag">WebSocket</span>
+        <span class="tag">i18n</span>
+        <span class="tag">Vuetify</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">SCSS</span>
+        <span class="tag">Git / GitFlow</span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <!-- 專案 1 -->
+      <section class="project"
+        data-images='["./image/101-1.webp", "./image/101-2.webp", "./image/101-3.webp", "./image/101-4.webp", "./image/101-5.webp"]'
+        data-title="TAIPEI 101｜AI 智能客服">
+        <div class="title">
+          <h2>TAIPEI 101｜AI 智能客服</h2>
+          <p>提供即時語音互動與導覽服務的 AI 智能客服系統</p>
+        </div>
+
+
+        <div class="img-box">
+          <img src="./image/101.webp" alt="TAIPEI 101｜AI 智能客服" loading="lazy">
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>使用 Vue 3 開發，整合即時對話、語音（STT／TTS）與影片播放功能</li>
+            <li>使用 Axios 串接 RESTful API</li>
+            <li>使用 Vue Router、Pinia 進行路由與全域狀態管理</li>
+            <li>導入 i18n，內容、影片與語音可依語系動態切換</li>
+            <li>整合 Web Speech API、Recorder-core、QR Code、AR 導覽與影片播放控制等多媒體功能</li>
+          </ul>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Vue 3</span>
+          <span class="tag">Pinia</span>
+          <span class="tag">Vue Router</span>
+          <span class="tag">Swiper</span>
+          <span class="tag">i18n</span>
+          <span class="tag">Axios</span>
+        </div>
+      </section>
+
+      <!-- 專案 2 -->
+      <section class="project" data-url="https://craftsplatform.ntcri.gov.tw/">
+        <div class="title">
+          <h2>工藝中心｜臺灣工藝學習平台</h2>
+          <p>提供講師上架與學員查詢課程的學習平台</p>
+        </div>
+
+        <div class="img-box">
+          <img src="./image/craftsplatform.webp" alt="臺灣工藝學習平台" loading="lazy">
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>使用 Vue 3 開發，整合課程送審、線上報名與據點管理功能</li>
+            <li>使用 Axios 串接 RESTful API</li>
+            <li>整合 Leaflet 地圖，支援定位搜尋、關鍵字查詢與地圖位置顯示</li>
+            <li>實作角色權限控制，依講師／學員提供對應介面與功能</li>
+            <li>導入 i18n，全站內容可切換為英文</li>
+          </ul>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Vue 3</span>
+          <span class="tag">Pinia</span>
+          <span class="tag">Vue Router</span>
+          <span class="tag">Vuetify</span>
+          <span class="tag">i18n</span>
+          <span class="tag">Leaflet</span>
+          <span class="tag">Axios</span>
+        </div>
+      </section>
+
+      <!-- 專案 3 -->
+      <section class="project" data-images='["./image/nhri-1.webp", "./image/nhri-2.webp", "./image/nhri-3.webp"]'
+        data-title="國家衛生研究院｜健康小管家">
+        <div class="title">
+          <h2>國家衛生研究院｜健康小管家</h2>
+          <p>多語系語音互動 AI 客服，支援角色切換與對話紀錄</p>
+        </div>
+
+        <div class="img-box">
+          <img src="./image/nhri.webp" alt="國家衛生研究院｜健康小管家" loading="lazy">
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>使用 Vue 3 開發，整合即時對話、語音（STT／TTS）與影片播放功能</li>
+            <li>使用 Axios 串接 RESTful API</li>
+            <li>使用 Vue Router 取得路由參數，實作多版本與角色切換機制</li>
+            <li>導入 i18n，內容、影片與語音可依語系動態切換</li>
+            <li>整合 Token 驗證，取得病患資訊並載入歷史對話紀錄</li>
+          </ul>
+        </div>
+
+
+        <div class="tags">
+          <span class="tag">Vue 3</span>
+          <span class="tag">Vue Router</span>
+          <span class="tag">i18n</span>
+          <span class="tag">Axios</span>
+        </div>
+      </section>
+
+      <!-- 專案 4 -->
+      <section class="project" data-images='["./image/saas-1.webp", "./image/saas-2.webp", "./image/saas-3.webp"]'
+        data-title="AI 影片製作 SaaS">
+        <div class="title">
+          <h2>AI 影片製作 SaaS</h2>
+          <p>一鍵生成影片，完成後即時更新狀態並提供下載</p>
+        </div>
+
+        <div class="img-box">
+          <img src="./image/saas.webp" alt="AI 影片製作 SaaS" loading="lazy">
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>使用 Vue 3 開發，整合素材上傳、模板選擇及影片生成</li>
+            <li>使用 Axios 串接 RESTful API</li>
+            <li>整合 Pinia 與 WebSocket，即時更新影片製作進度</li>
+            <li>導入 i18n，介面與提示訊息可依語系動態切換</li>
+            <li>使用 Vuetify 建構 UI 元件與版面配置</li>
+          </ul>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Vue 3</span>
+          <span class="tag">Vue Router</span>
+          <span class="tag">Pinia</span>
+          <span class="tag">WebSocket</span>
+          <span class="tag">Vuetify</span>
+          <span class="tag">i18n</span>
+          <span class="tag">Axios</span>
+        </div>
+      </section>
+
+      <!-- 專案 5 -->
+      <section class="project" data-url="https://hhh.com.tw/hhh_index.html">
+        <div class="title">
+          <h2>幸福空間｜官網</h2>
+          <p>室內設計與影音平台首頁開發與維運</p>
+        </div>
+
+        <div class="img-box">
+          <img src="./image/hhh.webp" alt="幸福空間｜官網" loading="lazy">
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>使用 Bootstrap 5 + jQuery 建置頁面版型與 UI 元件</li>
+            <li>整合 Slick Carousel，實作多組輪播與進度條</li>
+            <li>串接 Google Tag Manager，追蹤搜尋與點擊行為</li>
+            <li>串接 Google／Facebook 登入與會員互動功能</li>
+            <li>導入 SEO 結構化資料（JSON-LD）</li>
+          </ul>
+        </div>
+
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">jQuery</span>
+          <span class="tag">Bootstrap 5</span>
+          <span class="tag">Slick</span>
+        </div>
+      </section>
+
+      <!-- 專案 6 -->
+      <!-- data-url="https://whhousing.com/backstage/login" -->
+      <section class="project"
+        data-images='["./image/whhousing.webp", "./image/whhousing-1.webp", "./image/whhousing-2.webp", "./image/whhousing-3.webp"]'
+        data-title="不動產租賃管理系統">
+        <div class="title">
+          <h2>不動產租賃管理系統</h2>
+          <p>提供房仲管理租賃物件、房客資料與租約流程的一站式管理平台</p>
+        </div>
+
+        <div class="img-box">
+          <img src="./image/whhousing.webp" alt="不動產租賃管理系統" loading="lazy">
+        </div>
+
+        <div class="content">
+          <ul>
+            <li>使用 Vue 3 + Vuetify 開發，整合物件查詢與新增／編輯功能</li>
+            <li>使用 Axios 串接 RESTful API</li>
+            <li>使用 Vue Router 取得路由參數，判斷新增／編輯模式並載入對應資料</li>
+            <li>使用 Pinia 管理共用狀態與檔案上傳（圖片／附件）</li>
+            <li>實作權限控管與帳號管理機制</li>
+          </ul>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Vue 3</span>
+          <span class="tag">Vue Router</span>
+          <span class="tag">Pinia</span>
+          <span class="tag">Vuetify</span>
+          <span class="tag">Axios</span>
+          <span class="tag">SCSS</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Project Preview">
+      <button class="modal-close" type="button" aria-label="關閉" data-close="1">×</button>
+
+      <div class="modal-header">
+        <h3 id="projectModalTitle" class="modal-title"></h3>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper modalSwiper">
+        <div class="swiper-wrapper" id="projectModalSlides"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop" aria-label="回到頁首" type="button">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M6 15L12 9L18 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const btn = document.getElementById('backToTop')
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        btn.classList.add('show')
+      } else {
+        btn.classList.remove('show')
+      }
+    })
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    })
+
+    let modalSwiper = null;
+    const modalEl = document.getElementById('projectModal');
+    const titleEl = document.getElementById('projectModalTitle');
+    const slidesEl = document.getElementById('projectModalSlides');
+
+    function handleProjectClick(projectEl) {
+      const url = projectEl.dataset.url;
+      if (url) {
+        // 有網址 > 另開新頁
+        window.open(url, '_blank', 'noopener');
+        return;
+      }
+
+      // 沒網址 > 開 modal + 輪播圖
+      const imagesRaw = projectEl.dataset.images;
+      if (!imagesRaw) return;
+
+      let images = [];
+      try {
+        images = JSON.parse(imagesRaw);
+      } catch (e) {
+        console.warn('data-images error: ', e);
+        return;
+      }
+
+      openProjectModal({
+        title: projectEl.dataset.title || projectEl.querySelector('h2')?.textContent || '',
+        images
+      });
+    }
+
+    function openProjectModal({ title, images }) {
+      // 填標題
+      titleEl.textContent = title;
+
+      // 清空 slides
+      slidesEl.innerHTML = '';
+
+      // 建 slide
+      images.forEach((src) => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.innerHTML = `<img src="${src}" alt="${title}">`;
+        slidesEl.appendChild(slide);
+      });
+
+      // 開啟 modal
+      modalEl.classList.add('is-open');
+      modalEl.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+
+      // 初始化 / 重建 Swiper
+      if (modalSwiper) {
+        modalSwiper.destroy(true, true);
+        modalSwiper = null;
+      }
+
+      modalSwiper = new Swiper('.modalSwiper', {
+        loop: images.length > 1,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+      });
+    }
+
+    function closeProjectModal() {
+      modalEl.classList.remove('is-open');
+      modalEl.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+
+      if (modalSwiper) {
+        modalSwiper.destroy(true, true);
+        modalSwiper = null;
+      }
+      slidesEl.innerHTML = '';
+    }
+
+    // 事件綁定：整個 section 可點擊
+    document.querySelectorAll('.project').forEach((el) => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', (e) => {
+        // 不覆蓋預設行為
+        const isInteractive = e.target.closest('a, button, input, textarea, select, label');
+        if (isInteractive) return;
+
+        handleProjectClick(el);
+      });
+    });
+
+    // 點遮罩或 close 按鈕 > 關閉
+    modalEl.addEventListener('click', (e) => {
+      if (e.target?.dataset?.close === '1') closeProjectModal();
+    });
+
+    // ESC 關閉
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalEl.classList.contains('is-open')) {
+        closeProjectModal();
+      }
+    });
+  </script>
+</body>
+
+</html>
