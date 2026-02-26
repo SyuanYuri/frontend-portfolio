@@ -156,7 +156,6 @@ body {
 }
 .container .wrap .project .img-box img {
   width: 100%;
-  flex: 0 0 50%;
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
