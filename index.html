@@ -340,8 +340,41 @@
       images.forEach((src) => {
         const slide = document.createElement('div');
         slide.className = 'swiper-slide';
-        slide.innerHTML = `<img src="${src}" alt="${title}">`;
+        // slide.innerHTML = `<img src="${src}" alt="${title}">`;
+        // 載入動畫
+        slide.innerHTML = `
+          <div class="slide-media">
+            <img src="${src}" alt="${title}" loading="eager" decoding="async">
+              <div class="loader" aria-hidden="true">
+                <div class="spinner"></div>
+              </div>
+          </div>
+          `;
         slidesEl.appendChild(slide);
+
+        const media = slide.querySelector('.slide-media');
+        const img = slide.querySelector('img');
+        const start = performance.now();
+
+        function markLoaded() {
+          const minSpin = 250; // 最短載入時間 (毫秒)
+          const elapsed = performance.now() - start;
+          const wait = Math.max(0, minSpin - elapsed);
+
+          setTimeout(() => {
+            media.classList.add('is-loaded');
+            if (modalSwiper) modalSwiper.update();
+          }, wait);
+        }
+
+        if (img.complete) {
+          markLoaded();
+        } else {
+          img.addEventListener('load', markLoaded, { once: true });
+          img.addEventListener('error', () => {
+            media.classList.add('is-loaded');
+          }, { once: true });
+        }
       });
 
       // 開啟 modal
@@ -359,6 +392,11 @@
         loop: images.length > 1,
         pagination: { el: '.swiper-pagination', clickable: true },
         navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+      });
+
+      // 於下次畫面重繪前執行 Swiper 更新
+      requestAnimationFrame(() => {
+        if (modalSwiper) modalSwiper.update();
       });
     }
 

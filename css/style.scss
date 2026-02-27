@@ -350,9 +350,14 @@ body {
   .modalSwiper {
     flex: 1 1 auto;
     min-height: 0;
+    height: clamp(360px, 70vh, 760px);
   }
 
   .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     img {
       max-width: 100%;
       max-height: calc(100vh - 200px);
@@ -363,6 +368,50 @@ body {
     }
   }
 
+  .slide-media {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .25s ease;
+    }
+
+    &.is-loaded {
+      img {
+        opacity: 1;
+      }
+
+      .loader {
+        opacity: 0;
+        transition: opacity .2s ease;
+      }
+    }
+  }
+
+  .loader {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+  }
+
+  .spinner {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .18);
+    border-top-color: rgba(255, 255, 255, .9);
+    animation: spin .9s linear infinite;
+    filter: drop-shadow(0 6px 16px rgba(0, 0, 0, .35));
+  }
+
   .swiper-wrapper {
     align-items: center;
   }
@@ -370,5 +419,11 @@ body {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .8));
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
